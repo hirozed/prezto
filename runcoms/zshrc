@@ -11,3 +11,23 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin/python:/Users/reevior/scripts/shared:$PATH
+
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+export VAGRANT_VAGRANTFILE=conf/vagrant/Vagrantfile
+export SVN_EDITOR=vim
+export EDITOR=vim
+
+#Shared
+. ~/scripts/aliases/git.alias
+. ~/scripts/aliases/general.alias
+. ~/scripts/aliases/ssh.alias
+. ~/scripts/aliases/svn.alias
+. ~/scripts/aliases/vagrant.alias
+. ~/scripts/aliases/svn-stat.alias
+. ~/scripts/aliases/ios.alias
+
+#tmuxinator
+. ~/.tmuxinator/tmuxinator.zsh
