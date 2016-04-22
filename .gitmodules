@@ -19,6 +19,3 @@
 [submodule "modules/autosuggestions/external"]
 	path = modules/autosuggestions/external
 	url = https://github.com/tarruda/zsh-autosuggestions
-[submodule "modules/prompt/external/garrett"]
-	path = modules/prompt/external/garrett
-	url = git@github.com:hirozed/zsh-prompt-garrett.git
